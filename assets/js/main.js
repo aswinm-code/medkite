@@ -683,6 +683,21 @@
     }
   }
 
+  function toggleSubmit() {
+    const checkbox = document.getElementById("agree");
+    const submitBtn = document.getElementById("submitBtn");
+    submitBtn.disabled = !checkbox.checked;
+  }
+
+  function validateForm() {
+    const checkbox = document.getElementById("agree");
+    if (!checkbox.checked) {
+      alert("Please agree to the Privacy Policy before submitting.");
+      return false; // stop form submission
+    }
+    return true; // allow submission
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     renderCoursesByCategory();
     if (window.location.pathname.includes('course-details.html')) {

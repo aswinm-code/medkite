@@ -37,11 +37,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // 7️⃣ Send the email
     if (mail($to, $mail_subject, $mail_body, $headers)) {
-        echo "<h3>✅ Message sent successfully! Thank you, $name.</h3>";
+        echo "OK"; // success message for JS
     } else {
-        echo "<h3>❌ Sorry, your message could not be sent. Try again later.</h3>";
+        http_response_code(500);
+        echo "Failed to send message.";
     }
 } else {
-    echo "Invalid request method.";
+    http_response_code(405);
+    echo "Method Not Allowed";
 }
 ?>
