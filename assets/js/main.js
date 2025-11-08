@@ -1,10 +1,4 @@
-/**
-* Template Name: Mentor
-* Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 (function () {
   "use strict";
@@ -311,7 +305,7 @@
     },
     bp: {
       name: "BPT/B.Voc - Physiotherapy Technology",
-      image: "assets/img/courses/BPT.jpg",
+      image: "assets/img/courses/bpt.png",
       overview: [
         "Course trains students to work as Physiotherapy Technicians skilled in patient assessment, specimen collection, and clinical support.",
         "Focuses on practical techniques, infection control, biomedical waste management, and professional healthcare practices."
@@ -330,7 +324,7 @@
     },
     dml: {
       name: "Diploma in Medical Laboratory Technology (DMLT)",
-      image: "assets/img/courses/DMLT.jpg",
+      image: "assets/img/courses/diploma-ML.jpg",
       overview: [
         "Program provides in-depth training in pathology, microbiology, haematology, and biochemistry for accurate diagnosis and treatment support.",
         "Students gain hands-on experience in handling advanced laboratory equipment and performing precise diagnostic tests."
